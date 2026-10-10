@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Pre-Orders | North Star Bakery</title>
+    <meta name="description" content="Contact North Star Bakery with questions and bakery pre-order requests.">
+</head>
+<body>
+    <header>
+        <img src="bakery-logo.png" alt="North Star Bakery logo">
+        <h1>Contact North Star Bakery</h1>
+        <p>Have a question or planning something special? We would love to hear from you.</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="about.html">About Our Bakery</a></li>
+            <li><a href="contact.html">Contact and Pre-Orders</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Send Us a Message</h2>
+            <p>Use this form to ask a question or tell us about a
+            planned order. Submitting this demonstration form does not
+            automatically place or confirm an order.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    <p>
+                        <label for="customer-name">Full name:</label>
+                        <input type="text" id="customer-name"
+                               name="customer-name" required
+                               minlength="2" autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="customer-email">Email address:</label>
+                        <input type="email" id="customer-email"
+                               name="customer-email" required
+                               autocomplete="email">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Request</legend>
+                    <p>
+                        <label for="request-type">What can we help you with?</label>
+                        <select id="request-type" name="request-type" required>
+                            <option value="">Choose a request type</option>
+                            <option value="pre-order">Pre-order request</option>
+                            <option value="general-question">General question</option>
+                            <option value="event-order">Event or celebration order</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="pickup-date">Requested pickup date:</label>
+                        <input type="date" id="pickup-date"
+                               name="pickup-date" required>
+                    </p>
+                    <p>
+                        <label for="item-details">Items, quantities, and special instructions:</label>
+                        <textarea id="item-details" name="item-details"
+                                  rows="5" cols="40" required
+                                  minlength="5"
+                                  placeholder="Tell us which products you are interested in."></textarea>
+                    </p>
+                    <p>
+                        <label for="allergy-notes">Allergy notes (optional):</label>
+                        <textarea id="allergy-notes" name="allergy-notes"
+                                  rows="3" cols="40"
+                                  placeholder="List any allergies or ingredient concerns."></textarea>
+                    </p>
+                    <p>
+                        <label for="contact-phone">Phone number (optional):</label>
+                        <input type="tel" id="contact-phone"
+                               name="contact-phone"
+                               autocomplete="tel"
+                               pattern="[0-9()+ .-]{7,20}"
+                               title="Enter a phone number using 7 to 20 digits or common phone number characters.">
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Send Inquiry</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+        <section>
+            <h2>Location and Hours</h2>
+            <p>Location: Please confirm North Star Bakery's current
+            street address before visiting.</p>
+            <p>Hours: Please contact the bakery to confirm its current
+            opening hours and holiday schedule.</p>
+            <p>Pickup dates and orders are subject to bakery availability
+            and confirmation by staff.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 North Star Bakery. Fresh baking, friendly faces.</p>
+        <p><a href="index.html">Return to the home page</a></p>
+    </footer>
+</body>
+</html>
