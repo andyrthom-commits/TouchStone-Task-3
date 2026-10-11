@@ -214,3 +214,14 @@ body.dark-mode #theme-toggle {
     background-color: #FFD84D;
     color: #5B2C83;
 }
+
+.error-message {
+    display: block;
+    color: #B00020;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+body.dark-mode .error-message {
+    color: #FFD84D;
+}
