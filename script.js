@@ -80,17 +80,20 @@ if (contactForm) {
         const nameIsValid = checkName();
         const emailIsValid = checkEmail();
 
-        if (!nameIsValid || !emailIsValid || !contactForm.checkValidity()) {
-            event.preventDefault();
+       if (!nameIsValid || !emailIsValid) {
+    event.preventDefault();
 
-            if (!nameIsValid) {
-                nameInput.focus();
-            } else if (!emailIsValid) {
-                emailInput.focus();
-            }
-        } else {
-            event.preventDefault();
-            alert("Your form passed validation. This demonstration form does not send an actual message.");
-        }
+    if (!nameIsValid) {
+        nameInput.focus();
+    } else {
+        emailInput.focus();
+    }
+} else if (!contactForm.checkValidity()) {
+    event.preventDefault();
+    contactForm.reportValidity();
+} else {
+    event.preventDefault();
+    alert("Your form passed validation. This demonstration form does not send an actual message.");
+}
     });
 }
